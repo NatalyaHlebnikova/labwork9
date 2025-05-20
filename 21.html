@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Реєстрація в інтернет-магазині</title>
+    <style>
+        body {
+            font-family: calibri;
+            background-color: #FFFFE0;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .registration-form {
+            background: #f2f2f2;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            width: 350px;
+        }
+        .registration-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .registration-form input,
+        .registration-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .registration-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form class="registration-form">
+        <h2><IMG SRC="unnamed.jpg" ALT="зображення" WIDTH="300" HEIGHT="50" ALIGN="CENTER"></h2>
+		<h2>Реєстрація</h2>
+        <font size ="2.5" color="FF8C00">ПІБ<input type="text" name="fullname" required>
+        Електронна пошта<input type="email" name="email" required>
+        Пароль<input type="password" name="password" required>
+        Підтвердження пароля<input type="password" name="confirm_password" required>
+        Ім’я користувача (логін)<input type="text" name="username" required>
+        Телефон<input type="tel" name="phone" required>
+        Стать<select name="gender" required>
+            <option></option>
+            <option value="male"><color="FF8C00">Чоловіча</option>
+            <option value="selected">Жіноча</option>
+        </select>
+        Дата народження<input type="date" name="birthdate" required>
+        Місто<input type="text" name="city" required>
+        Поштовий індекс<input type="text" name="postalcode" required>
+        Країна<input type="text" name="country" required></font>
+        <button type="submit" onClick="location.href='https://www.aliexpress.com/'">Зареєструватися</button>
+    </form>
+</body>
+</html>
